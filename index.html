@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('rosiebg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .search-bar {
+            margin: 20px auto;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .search-bar input {
+            width: 60%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+        }
+
+        .search-bar button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #333;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .product {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            max-height: 150px;
+            object-fit: cover;
+        }
+
+        .icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .icons img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SKILL FORGE IT</div>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#product">Product</a>
+            <a href="#contact">Contact</a>
+            <a href="#location">Location</a>
+        </nav>
+        <div class="icons">
+            <img src="user-icon.png" alt="User" title="User"> 
+            <img src="cart-icon.png" alt="Cart" title="Cart"> 
+        </div>
+    </header>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="shabu.jpeg" alt="Product 1"> 
+            <span>Shabu (retail)<br>P4599 per g</span>
+        </div>
+        <div class="product">
+            <img src="mari.jpg" alt="Product 2"> 
+            <span>Marijuana Lab (full package)<br>P850,000</span>
+        </div>
+        <div class="product">
+            <img src="product3.jpg" alt="Product 3"> 
+            <span>PRODUCT 3</span>
+        </div>
+        <div class="product">
+            <img src="product4.jpg" alt="Product 4"> 
+            <span>PRODUCT 4</span>
+        </div>
+    </div>
+</body>
+</html>
